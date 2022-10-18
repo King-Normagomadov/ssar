@@ -985,4 +985,41 @@ cta
     
   }
 
+  /*  ----------------------------- fixed order btn------------------------------------
+
+  .order-btn{
+    position: fixed;
+    float: right;
+    width: 80px;
+    height: 80px;
+    background-color: #03a9f4;
+    border-radius: 50px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;
+  }
+
   
+
+  .order-btn  i{
+    top: 30px;
+    position: relative;
+    font-size: 25px;
+    color: white;
+    transition: 0.2s;
+  }
+
+  .order-btn:hover {
+    transform: scale(1.2);
+    background-color: #f3f3f3;
+  }
+
+  .order-btn:hover i{
+    color: #03a9f4;
+  }
+
+
+  */
