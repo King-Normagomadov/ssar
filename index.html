@@ -22,7 +22,7 @@
         <link href="icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
         
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.css"> 
+        <link rel="stylesheet" href="icons/fontawesome-free-6.2.0-web/css/all.min.css"> 
         <!--revolution slider setting css-->
         <link href="rs-plugin/css/settings.css" rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
@@ -81,7 +81,7 @@
                     <!-- SLIDE 1 -->
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
                         <!-- MAIN IMAGE -->
-                         <img id="opa" src="images/sar-HD.jpg" alt="desk" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                         <img id="opa" src="images/sar-HD.jpg"   data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <!-- LAYERS -->
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption slider-title" data-x="center" data-y="center"  data-voffset="-30" data-speed="500" data-start="1200" data-easing="Power4.easeInOut">
@@ -89,12 +89,14 @@
                         </div> <!-- /tp-caption -->
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption slider-caption" data-x="center" data-y="center" data-voffset="40" data-speed="500" data-start="1800" data-easing="Power4.easeInOut" data-captionhidden="on">
-                            We help you gorw your business and make it globlize.
+                            <span>We help you gorw your business and make it globlize.</span>
                         </div> <!-- /tp-caption -->
 
                         <!-- LAYER NR. 3 -->
-                        <div class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120" data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
-                            <a class="btn btn-white" href="#about">SEE MORE</a>
+                        <div id="big" class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120" data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
+                            <a class="btn btn-white" href="#about">
+                                <i class="fa-solid fa-circle-arrow-down"></i>
+                            </a>
                         </div> <!-- /tp-caption -->
                     </li>
                     <!-- SLIDE 2 -->
@@ -110,12 +112,12 @@
 
                         <!-- LAYER NR. 2 -->
                         <div class="tp-caption slider-caption" data-x="center" data-y="center" data-voffset="40" data-speed="500" data-start="1800" data-easing="Power4.easeInOut" data-captionhidden="on">
-                            Number #1 Paper and Printing Suplement Supplier in Afghanistan
+                            <span>Number #1 Paper and Printing Suplement Supplier in Afghanistan</span>
                         </div> <!-- /tp-caption -->
 
                         <!-- LAYER NR. 3 -->
-                        <div class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120" data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
-                            <a class="btn btn-white" href="#about"><i class="fa-solid fa-arrow-down"></i></a>
+                        <div id="big" class="tp-caption slider-button scroll-to" data-x="center" data-y="center" data-voffset="120" data-speed="500" data-start="2400" data-easing="Power4.easeInOut" data-captionhidden="on">
+                            <a class="btn btn-white" href="#about"> <i class="fa-solid fa-circle-arrow-down"></i></a>
                         </div> <!-- /tp-caption -->
                     </li>
                     <!-- SLIDE 3 -->
@@ -132,7 +134,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text-center">
                         <div class="section-title">
-                            <h1>About <span class="alo">Sarwari Co.</span></h1> 
+                            <h1>About <span class="alo">Sarwari</span></h1> 
                             <span class="border-line"></span>
                             <p class="lead subtitle-caption">
                                 Through a deep understanding of the pulp, paper, and board industries, <span class="colored-text">SARWARI Co.</span>   delivers unbeatable service to partners across the entire business cycle. As a recognized, respectable name across the region, we have built our reputation on trust, expertise, and transparency.
@@ -838,6 +840,7 @@
                 </ul>
                 <span class="copyright">&copy; Copyright 2021. SARWARI PAPER Co. Created By <a href="">ASIR SAR</a></span>
             </div>
+            
         </footer>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.min.js" type="text/javascript"></script>

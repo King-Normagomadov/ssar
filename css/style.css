@@ -1,8 +1,4 @@
-/* 
-	Bonativo by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic');
 
@@ -78,6 +74,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 40px;
     margin-bottom: 0px;
     letter-spacing: 1px;
+    color: #000;
 }
 .border-line{
     width:40px;
@@ -185,7 +182,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .navbar-default .navbar-nav>li>a:hover{
         color: #ff0000;
-        transform: scale(1.2);
+        transform: scale(1.1);
         font-weight: bold;
        
         
@@ -222,6 +219,17 @@ h1,h2,h3,h4,h5,h6{
 .navbar-default .navbar-nav>li:hover .dropdown-menu{
     display: block;
 }
+
+.container .navbar-header .navbar-toggle{
+    background-color: white;
+    border-color: white;
+}
+
+
+.navbar-header .navbar-toggle .icon-bar{
+ background-color: #000;
+
+}
 /*********
 
 BUTTONS
@@ -244,7 +252,8 @@ BUTTONS
     outline: 0;
 }
 .btn-white{
-    color:#fff;
+
+    color:rgb(255, 255, 255);
     padding: 0px;
     border: 2px solid #fff;
     padding: 10px 20px;
@@ -279,8 +288,6 @@ BUTTONS
 }
 .btn-radius{
     padding: 13px 40px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
 }
 /***********
 
@@ -309,15 +316,41 @@ SLIDER REVOLUTION CSS
     font-weight: 300;
     
 }
+
 .slider-button a.btn-white{
-    color:#000;
-    background-color: #fff;
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 50px;
+    border-width: 0px;
 }
 .slider-button a.btn-white:hover{
     color:#fff;
     background-color: transparent;
+
 }
+
+.slider-button:hover a i{
+    transform: scale(1.3);
+}
+
+
+#big{
+    
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {  top:370px;}
+    25%  {  top:380px;}
+    50%  {  top:390px;}
+    75%  {  top:380px;}
+    100% {  top:370px;}
+  }
+
 /********
+
 
 services icons css
 
@@ -454,7 +487,6 @@ TEAM CSS
     height: auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    vertical-align: middle;
     z-index: 1;
     display: block;
     position: relative;
@@ -484,7 +516,6 @@ TEAM CSS
     height: auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    vertical-align: middle;
     z-index: 1;
     display: block;
     position: relative;
@@ -745,7 +776,6 @@ cta
     height: auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    vertical-align: middle;
     z-index: 1;
     display: block;
     position: relative;
@@ -756,9 +786,10 @@ cta
 }
 .contact-details h4{
     margin: 20px 0;
-    color:#fff;
+    color:rgb(255, 255, 255);
     font-weight: 300;
-    font-style: italic;
+    font-family: Segoe UI Regular; 
+
 }
 .contact-form {
     background-color: rgba(0,0,0,0.3);
@@ -804,6 +835,7 @@ cta
     display: block;
     color:#fff;
     font-size: 35px;
+    
 }
 .footer .social{
     margin: 30px 0;
@@ -985,6 +1017,29 @@ cta
     
   }
 
+  @media screen and (max-width:600px){
+    .slider-title span, #chg{
+            font-size: 25px;
+    }
+
+    .slider-caption span{
+        font-size: 10px;
+        position: relative;
+        top: 10px;
+    }
+
+    .slider-button .btn-white{
+        position: relative;
+        top:-50px;
+        
+    }
+  }
+
+
+
+
+
+  
   /*  ----------------------------- fixed order btn------------------------------------
 
   .order-btn{
