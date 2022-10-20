@@ -308,7 +308,7 @@ SLIDER REVOLUTION CSS
 
 .slider-title span{
     font-weight: 600;
-    font-family:segoe UI Historic;
+    
 }
 .slider-caption{
     color:#f8f8f8;
@@ -1019,13 +1019,15 @@ cta
 
   @media screen and (max-width:600px){
     .slider-title span, #chg{
-            font-size: 25px;
+            font-size: 35px;
+            
     }
 
     .slider-caption span{
-        font-size: 10px;
+        font-size: 12px;
         position: relative;
-        top: 10px;
+        top: 20px;
+
     }
 
     .slider-button .btn-white{
