@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 .navbar-default {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border:0px;
     margin: 0px;
     width:100%;
@@ -984,7 +984,7 @@ cta
     }
   }
   
-  
+
 
 
 
@@ -1035,6 +1035,11 @@ cta
         top:-50px;
         
     }
+
+     .navbar {
+        background-color: #ededed;
+    }
+   
   }
 
 
