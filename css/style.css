@@ -308,6 +308,7 @@ SLIDER REVOLUTION CSS
 
 .slider-title span{
     font-weight: 600;
+    text-shadow:0px 0px 50px ;
     
 }
 .slider-caption{
@@ -1018,7 +1019,7 @@ cta
   }
 
   @media screen and (max-width:600px){
-    .slider-title span, #chg{
+    .slider-title span{
             font-size: 35px;
             
     }
