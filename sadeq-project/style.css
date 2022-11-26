@@ -1,0 +1,480 @@
+
+:root{
+
+    --first-color:rgb(0, 81, 188);
+    --second-color:rgb(2, 169, 250);
+    --white-coloe:rgb(255, 255, 255);
+    --footer-title-color:rgb(115, 208, 255);
+    --first-size:1rem;
+    --seond-size:.50rem;
+    --third-size:.25rem;
+
+    --font-title:poppins;
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+        
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: Segoe UI;
+    font-size: var(--first-size);
+
+}
+
+.container{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container .bg{
+    position: relative;
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(./assets/images/background.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.container .bg .nav{
+    
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .bg .nav .logo{
+    background-image: url(./assets/images/SUAR.png);
+    width: 10vh;
+    height: 18vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 30px;
+    
+
+
+}
+
+.container .bg .nav .navigation-bar{
+    width: auto;
+    height: 100%;
+}
+
+.container .bg .nav .navigation-bar nav{
+    width: 120vh;
+    
+}
+
+.container .bg .nav .navigation-bar nav ul{
+    display: flex;
+    margin: 20px;
+    position: relative;
+
+}
+
+.container .bg .nav .navigation-bar nav ul li{
+    padding: 25px;
+    margin: 0px 20px ;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    position: relative;
+    
+    
+    
+}
+
+
+
+.container .bg .nav .navigation-bar nav ul li a{
+    color: white;
+    transition: 0.2s;
+    position: relative;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.container .bg .nav .navigation-bar nav ul li a:hover
+{
+    color: lightblue;
+    font-family: Segoe UI Regular;
+}
+
+
+
+.container .bg .txt-content{
+    display: block;
+    padding: 20vh;
+    top: -5vh;
+    position: relative;
+}
+
+.container .bg p{
+    font-size: var(--first-color);
+    color: white;
+    font-size: 1.5rem;
+    border-left: 2px solid white;
+    padding-left:10px ;
+}
+
+.container .bg h1{
+    font-size: 5rem;
+    color:white ;
+    width: 150vh;
+    line-height: 20vh;
+    font-family: poppins;
+    letter-spacing: 1px;
+
+}
+
+.container .services{
+    width: 100%;
+    height: auto;
+}
+
+.container .services .services-content{
+    display: block;
+    width: 100%;
+   
+}
+
+ /*------------------------------ this part of code styled all the div called title------*/
+.title{
+text-align: center;
+margin: 10vh;
+}
+
+.title h2{
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+.title div{
+    display: flex;
+    justify-content: center;
+
+}
+.title hr{
+    margin-top:20px  ;
+    border: 1px solid black;
+    background-color: black;
+    width: 100px;
+ 
+}
+
+
+.container .services .services-content .services-data{
+    display: block;
+    margin: 20vh;
+    
+}
+
+.container .services .services-content .services-data h4{
+    color: var(--second-color);
+    margin: 40px 0px;
+}
+
+.container .services .services-offer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.container .services .services-offer .icons{
+    text-align: center;
+    margin: 0px 80px;
+
+}
+
+.container .services .services-offer .icons i{
+    font-size: 7vh;
+    color: var(--second-color);
+}
+
+.container .services .services-offer .icons p{
+    margin-top: 15px;
+    
+}
+
+.container .time{
+    width: 100%;
+    height: auto;
+  /*background-image:linear-gradient(to right, rgb(9, 240, 240),rgb(2,169,250)); */
+    background-image: url(./assets/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .time .time-content{
+    display: flex;
+    justify-content: center;
+    padding: 8vh;
+}
+
+
+.container .time .time-content .work-time,
+.container .time .time-content .phone{
+    display: flex;
+    margin: 0px 100px;
+}
+
+
+.container .time .time-content .work-time .flex-2{
+    
+    position: relative;
+    text-align: right;
+    margin-left: 100px;
+}
+
+.container .time .time-content .work-time .flex-1 p,
+.container .time .time-content .work-time .flex-2 p{
+    color: white;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.container .time .time-content .phone{
+    padding: 4vh;
+
+}
+.container .time .time-content .phone p{
+    color: var(--white-coloe);
+    font-weight: 500;
+   
+}
+.container .time .time-content .phone i{
+    font-size: 5vh;
+    color: var(--white-coloe);
+    margin-right: 20px;
+    
+}
+
+.container .contact .contact-content{
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+.container .contact .contact-content .contact-form{
+    display: flex;
+    padding-left: 10vh;
+    padding-bottom: 8vh;
+}
+
+.container .contact .contact-content .contact-form .location iframe{
+    border-radius: 10px;
+
+}
+
+.container .contact .contact-content .contact-form .form{
+    display: block;
+    margin-left: 50px;
+    
+}
+
+.container .contact .contact-content .contact-form .form .form-title h2{
+    color: var(--second-color);
+}
+
+.container .contact .contact-content .contact-form .form .inputs{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .contact .contact-content .contact-form .form .inputs .name,
+.container .contact .contact-content .contact-form .form .inputs .email,
+.container .contact .contact-content .contact-form .form .inputs .phone
+{
+
+    margin-right: 40px;
+}
+.container .contact .contact-content .contact-form .form .massege{
+    display: block;
+}
+
+input{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+textarea{
+    margin-top: 10px;
+    width: 94.5%;
+    height: 100px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    border-color: var(--second-color);
+    color: var(--second-color);
+    background-color: white;
+    outline: none;
+    font-size: 1rem;
+    float: right;
+    right: 40px;
+    position: relative;
+    font-weight: bold;
+    transition: 0.2s;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: var(--second-color);
+    color: var(--white-coloe);
+   
+}
+
+
+.container .footer{
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(to bottom, rgb(2, 169, 250),rgb(0, 87, 131)) ;
+    overflow: hidden;
+    padding: 10vh 20vh;
+    display: block;
+}
+
+.container .footer footer{
+    display: flex;
+}
+
+.container .footer footer .footer-logo{
+    background-image: url(./assets/images/SUAR-big.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    width: 80vh;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.container .footer footer .footer-logo img{
+    width: 100px;
+    height: 120px;
+}
+
+.container .footer footer .footer-logo p{
+    color: var(--white-coloe);
+    width: 50vh;
+    margin-top: 10px;
+}
+
+.container .footer footer .about{
+    display: block;
+
+}
+
+.container .footer footer .about h3,
+.container .footer footer .follow h3{
+    color: var(--footer-title-color);
+    margin-bottom: 20px;
+}
+
+.container .footer footer .about p,address{
+    color: var(--white-coloe);
+    width: 40vh;
+    padding-bottom: 5px;
+}
+
+.container .footer footer .follow{
+    display: block;
+    margin-left: 10vh;
+}
+
+.container .footer footer .follow i{
+    color: var(--white-coloe);
+    font-size: 25px;
+    padding-left: 10px;
+    transition: 0.1s;
+}
+
+.container .footer footer .follow i:hover{
+    color: var(--footer-title-color);
+}
+
+.container .footer .author{
+    position: relative;
+    bottom: 30vh;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.container .footer .author .copyright{
+    color: var(--footer-title-color); 
+}
+
+.container .footer .author a{
+    color:rgb(67, 164, 212);
+    font-weight: 500;
+}
+
+.container .footer .scroll-bar{
+    
+    background-color: var(--footer-title-color);
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left:20vh;
+    transition: 0.2s;
+    animation: animate 5s ease-in-out  infinite;
+    box-shadow: inset 0px 0px 10px rgb(2, 169, 250);
+    
+}
+
+.container .footer .scroll-bar i{
+    color: var(--white-coloe);
+    font-size: 25px;
+    margin: 10vh;
+    
+}
+
+.container .footer .scroll-bar:hover{
+    background-color: var(--white-coloe);
+    transform: translateY(-10px);
+    border-radius: 50px;
+}
+.container .footer .scroll-bar:hover i{
+    color: rgb(2, 169, 250);
+    transform: scale(1.1);
+}
+
+@keyframes animate {
+    0%{ transform: translateY(0px);}
+    25%{ transform: translateY(-5px);}
+    50%{ transform: translateY(10px);}
+    75%{ transform: translateY(-5px);}
+    100%{transform: translateY(0px);}
+}

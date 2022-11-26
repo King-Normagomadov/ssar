@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+            display: block;
+        }
+
+        #scrollDemo {
+            height: 200px;
+            width: 100%;
+            overflow: auto;
+            background-color: #f0db4f
+            
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div  id="scrollDemo">
+        <div class="output">HI</div>
+    <div >
+        <p>JavaScript scrollLeft / scrollTop</p>
+    </div>
+    
+    <img  src="./assets/images/mr.suar.jpg" alt="">
+    <img id="pic" src="./assets/images/mr.suar.jpg" alt="">
+    <img src="./assets/images/mr.suar.jpg" alt="">
+    <img src="./assets/images/mr.suar.jpg" alt="">
+    <img src="./assets/images/mr.suar.jpg" alt="">
+</div>
+    
+
+    <script>
+let pic = document.getElementById("pic");
+let demo= document.getElementById("demo");      
+let con = document.getElementsByClassName("con");
+
+
+window.onscroll = function() {scrollFunction()};
+ 
+
+let x=0;
+
+function scrollFunction()
+{
+   let y= scrollbars 
+    
+   console.log(y);
+demo.innerHTML = y +=1;
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     pic.style.transform = "scale(2)";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+}
+    
+    
+
+    
+        const scrollDemo = document.querySelector("#scrollDemo");
+        const output = document.querySelector(".output");
+        const bod= document.body;
+
+        scrollDemo.addEventListener("scroll", event => {
+            output.innerHTML = `scrollTop: ${scrollDemo.scrollTop}`;
+        }, { passive: true });
+      
+    
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
