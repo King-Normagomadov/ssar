@@ -976,6 +976,8 @@ cta
       max-width: 50%;
     
     }
+
+  
   }
   
   
@@ -988,11 +990,6 @@ cta
       left: 15px;
     }
   }
-  
-
-
-
-
 
 
 /* ------------------------------------------------ logo responsive -------------------------------------------- */
@@ -1019,6 +1016,9 @@ cta
         
         
     }
+   
+    
+   
     
   }
 
@@ -1043,16 +1043,14 @@ cta
 
      .navbar {
         background-color: #ededed;
+        font-size: 8px;
     }
+
+    
    
   }
 
-
-
-
-
-  
-
+ 
 
   .order-btn{
     position: fixed;

@@ -47,6 +47,29 @@
                emailjs.init("E0-HGBk7mmVCBPkAO");
             })();
          </script>
+         <style>
+            swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+    }
+
+    swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 575px;
+      margin-bottom: 50px;
+
+    }
+
+    swiper-slide .col-sm-4 {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+    }
+         </style>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="80">
 
@@ -271,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row"  style=" justify-content: center;" >
 
                     <div class="col-sm-4 margin-bottom30">
                         <div class="team-box">
@@ -291,7 +314,7 @@
                             <em>Branch Manager</em>
                         </div>
                     </div><!--team col end-->
-                    <div class="col-sm-4 margin-bottom30">
+                    <div class="col-sm-4 margin-bottom30 ">
                         <div class="team-box">
                             <img src="images/p2.JPG" class="img-responsive" alt="">                       
                             <ul class="social list-inline">
@@ -471,7 +494,7 @@
 
         <div class="price-tables section-padding">
             <div class="container">
-                  <div class="row">
+                <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text-center">
                         <div class="section-title">
                             <h1>Our <span class="colored-text">Products</span></h1> 
@@ -483,32 +506,37 @@
                     </div>
                 </div><!-- title row end-->
                 <div class="row">
-                    <div class="col-sm-4 margin-bottom30">
-                        <div class="price-box text-center">
-                            <div class="header ">
-                                <h3>Offset Paper</h3>
-                                <div   class="price">
-                                    
-                                    <img id="product" src="./images/ik.png" alt="" >
+                    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                    <swiper-slide>
+                        <div class="col-sm-4 margin-bottom30">
+                            <div class="price-box text-center">
+                                <div class="header ">
+                                    <h3>Offset Paper</h3>
+                                    <div  class="price">
+                                        <img id="product" src="./images/ik.png" alt="" >
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li><b>Avaliable Size</b></li>
+                                    <li>A0 , A1 , A2 , A3 , A4</li>
+                                    <li><b>Application</b></li>
+                                    <li>Copy,All Purpose Printing, Wrinting & Inkjet</li>
+                                    <li><b>Avaliable grams</b></li>
+                                    <li>60-100 gsm</li>
+                                </ul>
+                                <div class="price-footer">
+                                    <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
                                 </div>
                             </div>
-                            <ul class="list-unstyled">
-                                <li><b>Avaliable Size</b></li>
-                                <li>A0 , A1 , A2 , A3 , A4</li>
-                                <li><b>Application</b></li>
-                                <li>Copy, Fax, Laser & Inkjet</li>
-                                <li><b>Avaliable grams</b></li>
-                                <li>60-100 gsm</li>
-                            </ul>
-                            <div class="price-footer">
-                                <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
-                            </div>
                         </div>
-                    </div><!--price col-->
-                     <div class="col-sm-4 margin-bottom30">
+                    </swiper-slide>
+                    <swiper-slide>
+                    <div class="col-sm-4 margin-bottom30">
                         <div class="price-box text-center">
                             <div class="header active">
-                                <h3>Art Board</h3>
+                                <h3>Art Card</h3>
                                 <div class="price">
                                     <img id="product" src="./images/gc.jpg.png" alt="" >
                                 </div>
@@ -525,28 +553,128 @@
                                 <h4><a href="#" class="btn btn-border-theme">Buy Now</a></h4>
                             </div>
                         </div>
-                    </div><!--price col-->
-                     <div class="col-sm-4 margin-bottom30">
-                        <div class="price-box text-center">
-                            <div class="header">
-                                <h3>Art Paper</h3>
-                                <div class="price">
-                                    <img id="product" src="./images/nv.jpg.png" alt="" >
+                    </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="col-sm-4 margin-bottom30">
+                            <div class="price-box text-center">
+                                <div class="header">
+                                    <h3>ART PAPER</h3>
+                                    <div class="price">
+                                        <img id="product" src="./images/nv.jpg.png" alt="" >
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li><b>Avaliable Size</b></li>
+                                    <li> A1 , A2 , A3 , A4</li>
+                                    <li><b>Application</b></li>
+                                    <li>Poster, brochures, Advertises, Journal</li>
+                                    <li><b>Avaliable grams</b></li>
+                                    <li>90-150 gsm</li>
+                                </ul>
+                                <div class="price-footer">
+                                    <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
                                 </div>
                             </div>
-                            <ul class="list-unstyled">
-                                <li><b>Avaliable Size</b></li>
-                                <li> A1 , A2 , A3 , A4</li>
-                                <li><b>Application</b></li>
-                                <li>Copy, Fax, Laser & Inkjet</li>
-                                <li><b>Avaliable grams</b></li>
-                                <li>90-150 gsm</li>
-                            </ul>
-                            <div class="price-footer">
-                                <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="col-sm-4 margin-bottom30">
+                            <div class="price-box text-center">
+                                <div class="header">
+                                    <h3>Sticker</h3>
+                                    <div class="price">
+                                        <img id="product" src="./images/sti.jpg" alt="" >
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li><b>Avaliable Size</b></li>
+                                    <li> 20 x 30 inch</li>
+                                    <li><b>Application</b></li>
+                                    <li>Poster, brochures, Advertises & Stickers</li>
+                                    <li><b>Avaliable grams</b></li>
+                                    <li>120 gsm</li>
+                                </ul>
+                                <div class="price-footer">
+                                    <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
+                                </div>
                             </div>
                         </div>
-                    </div><!--price col-->
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="col-sm-4 margin-bottom30">
+                            <div class="price-box text-center">
+                                <div class="header">
+                                    <h3>Bleach Card</h3>
+                                    <div class="price">
+                                        <img id="product" src="./images/nin.jpg" alt="" >
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li><b>Avaliable Size</b></li>
+                                    <li> A1 , A2 , A3 , A4</li>
+                                    <li><b>Application</b></li>
+                                    <li>Can, Cartoon, File cover</li>
+                                    <li><b>Avaliable grams</b></li>
+                                    <li>90-150 gsm</li>
+                                </ul>
+                                <div class="price-footer">
+                                    <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="col-sm-4 margin-bottom30">
+                            <div class="price-box text-center">
+                                <div class="header">
+                                    <h3>Carbonless Paper</h3>
+                                    <div class="price">
+                                        <img id="product" src="./images/download.png" alt="" >
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li><b>Avaliable Size</b></li>
+                                    <li> 17 x 24 in</li>
+                                    <li><b>Application</b></li>
+                                    <li>Recipts, Bill, Invoice & Banking</li>
+                                    <li><b>Avaliable grams</b></li>
+                                    <li>55 gsm</li>
+                                </ul>
+                                <div class="price-footer">
+                                    <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="col-sm-4 margin-bottom30">
+                            <div class="price-box text-center">
+                                <div class="header">
+                                    <h3>Box Board</h3>
+                                    <div class="price">
+                                        <img id="product" src="./images/box.webp" alt="" >
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li><b>Avaliable Size</b></li>
+                                    <li> A1 , A2 , A3 , A4</li>
+                                    <li><b>Application</b></li>
+                                    <li>Printing, Box, Cartoon & Can</li>
+                                    <li><b>Avaliable grams</b></li>
+                                    <li>250-350 gsm</li>
+                                </ul>
+                                <div class="price-footer">
+                                    <h4><a href="#" class="btn btn-border-black">Buy Now</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                    
+                  </swiper-container>
+                    
+                     
+                     
                 </div>
             </div>
         </div><!--pricing-->
@@ -898,7 +1026,7 @@
         <script src="js/template.js" type="text/javascript"></script>
         <script src="/inde.js" type="text/javascript"></script>></script>
 
-       
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
         <a href="#home" id="scroller">  
             <div class="order-btn">
