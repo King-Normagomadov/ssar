@@ -196,3 +196,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+//-----------------------------------------------------
+const myModal =new bootstrap.Modal(document.getElementById('myModal'))
+
+window.onload= function(){
+  myModal.show();
+}
+
