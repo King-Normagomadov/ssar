@@ -6,7 +6,7 @@
 (function () {
   "use strict";
 
-  let forms = document.querySelectorAll('.php-email-form');
+   let forms = document.querySelectorAll('.php-email-form');
 
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
@@ -18,7 +18,7 @@
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!');
+        // displayError(thisForm, 'The form action property is not set!');
         return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');

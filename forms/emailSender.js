@@ -1,3 +1,5 @@
+let x = document.getElementById("sentmessage");
+
 function sendEmail(){ 
     var params = {
         name: document.getElementById("name").value,
@@ -13,11 +15,10 @@ emailjs.send(serviceID,templateID,params).then((res)=>{
     //let w = document.getElementById('loading');
     //w.style.display='block';
     
-    if(res.status == 200){
-
-    let x = document.getElementById("sentmessage");
     x.style.display="block";
-    setInterval(x.remove(),5000);
+    setInterval(remove,5000);
+    function remove(){
+        x.style.display="none"; 
     }
 
     }).catch((err)=>console.log(err));
