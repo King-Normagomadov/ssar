@@ -2206,3 +2206,12 @@ section {
       width: 40%;
     }
   }
+
+.login-btn {
+  margin-left: 20px;
+}
+
+.login-btn .btn {
+  font-size: 14px;
+  padding: 6px 14px;
+}
